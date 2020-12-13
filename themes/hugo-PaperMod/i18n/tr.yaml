@@ -1,0 +1,16 @@
+- id: prev_page
+  translation: "Önceki Sayfa"
+
+- id: next_page
+  translation: "Sonraki Sayfa"
+
+- id: read_time
+  translation:
+    one : "1 dk"
+    other: "Okuma: {{ .Count }} dk "
+
+- id: toc
+  translation: "İçindekiler"
+
+- id: translations
+  translation: "Translations"

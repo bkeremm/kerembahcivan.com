@@ -1,0 +1,110 @@
+baseURL = "http://example.org/"
+title = "Kerem Bahcivan"
+paginate = 8.0
+theme = "hugo-PaperMod"
+enableInlineShortcodes = true
+enableRobotsTXT = true
+defaultContentLanguage = "tr"
+[minify]
+disableXML = true
+
+[languages]
+
+  [languages.tr]
+  languageName = "Türkçe"
+  weight = 1.0
+
+    [languages.tr.menu]
+
+      [[languages.tr.menu.main]]
+      name = "Arama"
+      url = "search/"
+      weight = 10.0
+
+
+[outputs]
+home = [
+  "HTML",
+  "RSS",
+  "JSON"
+]
+
+[params]
+env = "production"
+description = "Kişisel Blog"
+author = "Kerem Bahcivan"
+ShowReadingTime = true
+defaultTheme = "auto"
+ShowShareButtons = true
+displayFullLangName = true
+
+
+  [params.profileMode]
+  enabled = false
+  title = "PaperMod"
+  imageUrl = "#"
+  imageTitle = "my image"
+
+    [[params.profileMode.buttons]]
+    name = "Archives"
+    url = "archives"
+
+    [[params.profileMode.buttons]]
+    name = "Tags"
+    url = "tags"
+
+  [params.homeInfoParams]
+  Title = "Selam 👋"
+  Content = "Merhaba, ben Kerem. Kişisel bloguma hoşgeldin.\n"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/bkeremm"
+
+  [[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/bkeremm"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/kerembahcivan"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/bkeremm"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+  disabled = false
+  simple = true
+
+  [privacy.twitter]
+  disabled = false
+  enableDNT = true
+  simple = true
+
+  [privacy.instagram]
+  disabled = false
+  simple = true
+
+  [privacy.youtube]
+  disabled = false
+  privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+  disableInlineCSS = true
+
+  [services.twitter]
+  disableInlineCSS = true
+
+[permalinks]
+  posts = "/:slug"
+  categories = "/:title"
