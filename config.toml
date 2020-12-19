@@ -5,6 +5,7 @@ theme = "hugo-PaperMod"
 enableInlineShortcodes = true
 enableRobotsTXT = true
 defaultContentLanguage = "tr"
+googleAnalytics= "G-L5EWQS3L3S"
 [minify]
 disableXML = true
 
@@ -17,9 +18,17 @@ disableXML = true
     [languages.tr.menu]
 
       [[languages.tr.menu.main]]
+      name = "Hakkımda"
+      url = "about/"
+
+      [[languages.tr.menu.main]]
       name = "Arama"
       url = "search/"
       weight = 10.0
+
+      [[languages.tr.menu.main]]
+      name = "İletişim"
+      url = "contact/"
 
 
 [outputs]
@@ -106,5 +115,5 @@ series = "series"
   disableInlineCSS = true
 
 [permalinks]
-  posts = "/:slug"
-  categories = "/:title"
+  posts = "/:filename"
+  categories = "/:filename"
